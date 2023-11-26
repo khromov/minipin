@@ -45,7 +45,7 @@ Preview
 
 - [x] Support the Server Sent Events transport
 - [x] Support `Grip-Channel`
-- [ ] Support `Grip-Keep-Alive`
+- [x] Support `Grip-Keep-Alive`
 - [ ] Support `Grip-Sig`
 - [ ] Work with existing Pushpin libraries
 - [ ] Support medium traffic levels (eg. thousands of concurrent users)
