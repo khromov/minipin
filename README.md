@@ -57,3 +57,7 @@ Preview
 * Supporting large amounts of users (eg. 50 000 concurrent users)
 * Supporting more than one running instance of MiniPin (ie. clustering)
 * Supporting WebSocket
+
+### Misc
+
+There is a full copy of Pushpin available via Docker if you run `docker-compose up`. This is provided for testing purposes to compare the implementations.
