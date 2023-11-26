@@ -1,4 +1,4 @@
-![](./.github/minipin.png|width=150)
+![](./.github/minipin-smol.png)
 
 ## MiniPin
 
