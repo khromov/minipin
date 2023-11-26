@@ -3,7 +3,8 @@
     import { onMount } from "svelte";
     import ReconnectingEventSource from "reconnecting-eventsource";
 
-    const pushPinUrl = "http://localhost:7999/api/pushpin/chat/general";
+    // const pushPinUrl = "http://localhost:7999/api/pushpin/chat/general";
+    const pushPinUrl = "http://localhost:3000/api/pushpin/chat/general";
 
     let sending = false;
     let input: HTMLInputElement | undefined;
@@ -23,6 +24,7 @@
                     messages = [...messages, eventData.text];
                 }
 
+                console.log('hello world');
                 console.log('eventData', eventData);
 			} catch (e) {
 				console.warn('Malformed realtime message', e);

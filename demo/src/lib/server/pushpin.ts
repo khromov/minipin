@@ -1,7 +1,8 @@
-import { env } from '$env/dynamic/private';
+import { env } from "$env/dynamic/private";
 
 export const publishEvent = async (channel: string, data: any, type = 'message') => {
-	const pushpinUrl = env.PUSHPIN_CONTROL_URI || 'http://localhost:5561';
+	// const pushpinUrl = env.PUSHPIN_CONTROL_URI || 'http://localhost:5561';
+	const pushpinUrl = 'http://localhost:3001';
 	const gripData = {
 		items: [
 			{
@@ -14,6 +15,8 @@ export const publishEvent = async (channel: string, data: any, type = 'message')
 			}
 		]
 	};
+
+	console.log(JSON.stringify(gripData));
 
 	try {
 		const response = await fetch(`${pushpinUrl}/publish`, {
