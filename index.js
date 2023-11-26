@@ -20,7 +20,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res) => res.send('MiniPush v0'));
+app.get('/', (req, res) => res.send('MiniPin v0'));
 
 app.get(pushpinPrefix, async (req, res) => {
   try {
@@ -98,7 +98,7 @@ function broadcastMessage(channel, message) {
 }
 
 app.listen(port, () => {
-  console.log(`http://localhost:${port} - MiniPush server`);
+  console.log(`http://localhost:${port} - MiniPin server`);
 });
 
 /* Control plane */
@@ -130,5 +130,5 @@ appControlPlane.post('/publish', (req, res) => {
 });
 
 appControlPlane.listen(portControlPlane, () => {
-  console.log(`http://localhost:${portControlPlane} - MiniPush control plane`);
+  console.log(`http://localhost:${portControlPlane} - MiniPin control plane`);
 });

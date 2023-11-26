@@ -4,7 +4,7 @@ services:
     build:
       context: ./pushpin
       dockerfile: Dockerfile
-    container_name: minipush_pushpin
+    container_name: minipin_pushpin
     ports:
       - '7999:7999'
       - '5560-5563:5560-5563' #<- Not needed in "host" network mode.
