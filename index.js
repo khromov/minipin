@@ -118,7 +118,6 @@ appControlPlane.post('/publish', (req, res) => {
 
       console.log(`Publishing message to channel ${channel}:`, JSON.stringify(content));
 
-      // Broadcast the content to clients subscribed to the channel
       broadcastMessage(channel, content);
     });
 
