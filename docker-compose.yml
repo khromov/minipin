@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  pushpin:
+    build:
+      context: ./pushpin
+      dockerfile: Dockerfile
+    container_name: minipush_pushpin
+    ports:
+      - '7999:7999'
+      - '5560-5563:5560-5563' #<- Not needed in "host" network mode.
+    #volumes:
+    #  - ./pushpin/routes:/etc/pushpin/routes
+    #network_mode: 'host' # Makes port accessible on localhost, workaround for host.docker.internal not working on normal Docker
