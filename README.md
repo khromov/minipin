@@ -26,7 +26,7 @@ Only `/publish` endpoint with SSE is implemented on the Control API.
 
 ### Demo
 
-There is an included chat demo.
+There is an included chat demo. First start the MiniPin server as mentioned above, then start the demo with:
 
 ```
 cd demo
