@@ -48,7 +48,7 @@ app.get(pushpinPrefix, async (req, res) => {
       console.log('Connected client:', clientIdCounter);
 
       const sendData = (data) => {
-        res.write(`data: ${JSON.stringify(data)}\n\n`);
+        res.write(data);
       };
 
       const clientId = clientIdCounter++;
