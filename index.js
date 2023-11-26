@@ -113,11 +113,10 @@ appControlPlane.post('/publish', (req, res) => {
     }
 
     req.body.items.forEach(item => {
-      console.log('ITEM', item);
       const channel = item.channel;
       const content = item.formats['http-stream'].content;
 
-      console.log(`Publishing message to channel ${channel}:`, content);
+      console.log(`Publishing message to channel ${channel}:`, JSON.stringify(content));
 
       // Broadcast the content to clients subscribed to the channel
       broadcastMessage(channel, content);
