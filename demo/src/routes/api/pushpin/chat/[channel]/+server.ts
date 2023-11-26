@@ -8,7 +8,7 @@ export const GET: RequestHandler = async ({ params }) => {
             'Content-Type': 'text/event-stream',
             'Grip-Hold': 'stream',
             'Grip-Channel': `channel:${channel}`,
-            'Grip-Keep-Alive': '\\n; format=cstring; timeout=15'
+            'Grip-Keep-Alive': '\\n; format=cstring; timeout=5'
         }
     });
 };

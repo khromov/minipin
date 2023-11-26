@@ -1,3 +1,5 @@
+![](./.github/minipin.png | width=150)
+
 ## MiniPin
 
 > Note: This repo is in a very early stage!
@@ -43,6 +45,7 @@ Preview
 
 - [x] Support the Server Sent Events transport
 - [x] Support `Grip-Channel`
+- [ ] Support `Grip-Keep-Alive`
 - [ ] Support `Grip-Sig`
 - [ ] Work with existing Pushpin libraries
 - [ ] Support medium traffic levels (eg. thousands of concurrent users)
