@@ -56,7 +56,7 @@ Preview
 
 * Supporting large amounts of users (eg. 50 000 concurrent users)
 * Supporting more than one running instance of MiniPin (ie. clustering)
-* Supporting WebSocket
+* Supporting WebSockets
 
 ### Misc
 
